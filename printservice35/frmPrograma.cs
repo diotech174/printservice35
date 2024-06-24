@@ -97,5 +97,17 @@ namespace printservice35
                 Application.Restart();
             }
         }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox = new AboutBox1();
+            aboutBox.ShowDialog();
+        }
+
+        private void btnManual_Click(object sender, EventArgs e)
+        {
+            frmManual frm = new frmManual();
+            frm.ShowDialog();
+        }
     }
 }

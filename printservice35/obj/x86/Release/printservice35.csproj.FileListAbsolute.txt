@@ -79,3 +79,5 @@ C:\Users\dioge\source\repos\printservice35\printservice35\bin\x86\Release\PdfSha
 C:\Users\dioge\source\repos\printservice35\printservice35\bin\x86\Release\System.Diagnostics.DiagnosticSource.xml
 C:\Users\dioge\source\repos\printservice35\printservice35\bin\x86\Release\de\PdfSharp.resources.dll
 C:\Users\dioge\source\repos\printservice35\printservice35\bin\x86\Release\de\PdfSharp.Charting.resources.dll
+C:\Users\dioge\source\repos\printservice35\printservice35\obj\x86\Release\printservice35.AboutBox1.resources
+C:\Users\dioge\source\repos\printservice35\printservice35\obj\x86\Release\printservice35.frmManual.resources

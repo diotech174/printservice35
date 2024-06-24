@@ -15,6 +15,7 @@ using System.Windows.Forms;
 using WebSocketSharp;
 using WebSocketSharp.Server;
 using File = System.IO.File;
+using System.Diagnostics;
 
 namespace printservice35
 {
@@ -33,23 +34,42 @@ namespace printservice35
         [STAThread]
         static void Main()
         {
-            string nomeZebra = Properties.Settings.Default.printZebra;
-            string printA4 = Properties.Settings.Default.printA4;
-            string port = Properties.Settings.Default.port.ToString();
-
-            if (port.Trim() != "0")
+            Process current = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName("printservice35");
+            bool running = false;
+            foreach (Process p in processes)
             {
-                Task.Run(() => Imprimir(nomeZebra));
+                if (p.Id != current.Id)
+                {
+                    running = true;
+                }
             }
+            if (running)
+            {
+                MessageBox.Show("O print service já está sendo excutado!");
+                Application.Exit();
+            }
+            else
+            {
 
-            // Configure e inicie a aplicação Windows Forms na thread principal
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+                string nomeZebra = Properties.Settings.Default.printZebra;
+                string printA4 = Properties.Settings.Default.printA4;
+                string port = Properties.Settings.Default.port.ToString();
 
-            // Crie e inicie uma nova thread para o formulário
-            Thread thread = new Thread(new ThreadStart(StartForm));
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+                if (port.Trim() != "0")
+                {
+                    Task.Run(() => Imprimir(nomeZebra));
+                }
+
+                // Configure e inicie a aplicação Windows Forms na thread principal
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+
+                // Crie e inicie uma nova thread para o formulário
+                Thread thread = new Thread(new ThreadStart(StartForm));
+                thread.SetApartmentState(ApartmentState.STA);
+                thread.Start();
+            }
         }
 
         static void StartForm()

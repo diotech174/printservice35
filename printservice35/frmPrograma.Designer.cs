@@ -37,19 +37,23 @@
             this.txtPort = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtHost = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.console = new System.Windows.Forms.RichTextBox();
             this.btnEncerrar = new System.Windows.Forms.Button();
             this.btnReiniciar = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnInfo = new System.Windows.Forms.ToolStripButton();
+            this.btnManual = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cbxZebra);
-            this.groupBox1.Location = new System.Drawing.Point(12, 21);
+            this.groupBox1.Location = new System.Drawing.Point(13, 52);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 82);
             this.groupBox1.TabIndex = 0;
@@ -69,7 +73,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cbxA4);
-            this.groupBox2.Location = new System.Drawing.Point(288, 21);
+            this.groupBox2.Location = new System.Drawing.Point(289, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(270, 82);
             this.groupBox2.TabIndex = 1;
@@ -91,7 +95,7 @@
             this.groupBox3.Controls.Add(this.txtPort);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.txtHost);
-            this.groupBox3.Location = new System.Drawing.Point(12, 109);
+            this.groupBox3.Location = new System.Drawing.Point(13, 140);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(546, 69);
             this.groupBox3.TabIndex = 2;
@@ -124,21 +128,12 @@
             this.txtHost.TabIndex = 1;
             this.txtHost.Text = "localhost";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 136);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 26);
-            this.comboBox1.TabIndex = 3;
-            // 
             // console
             // 
             this.console.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.console.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.console.ForeColor = System.Drawing.SystemColors.Window;
-            this.console.Location = new System.Drawing.Point(12, 184);
+            this.console.Location = new System.Drawing.Point(13, 215);
             this.console.Name = "console";
             this.console.ReadOnly = true;
             this.console.Size = new System.Drawing.Size(546, 190);
@@ -149,7 +144,7 @@
             // 
             this.btnEncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnEncerrar.Image")));
             this.btnEncerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEncerrar.Location = new System.Drawing.Point(454, 381);
+            this.btnEncerrar.Location = new System.Drawing.Point(455, 412);
             this.btnEncerrar.Name = "btnEncerrar";
             this.btnEncerrar.Size = new System.Drawing.Size(104, 34);
             this.btnEncerrar.TabIndex = 5;
@@ -162,7 +157,7 @@
             this.btnReiniciar.Enabled = false;
             this.btnReiniciar.Image = ((System.Drawing.Image)(resources.GetObject("btnReiniciar.Image")));
             this.btnReiniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReiniciar.Location = new System.Drawing.Point(344, 381);
+            this.btnReiniciar.Location = new System.Drawing.Point(345, 412);
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(104, 34);
             this.btnReiniciar.TabIndex = 4;
@@ -170,17 +165,54 @@
             this.btnReiniciar.UseVisualStyleBackColor = true;
             this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnManual,
+            this.btnInfo,
+            this.toolStripSeparator1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(571, 38);
+            this.toolStrip1.TabIndex = 6;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnInfo
+            // 
+            this.btnInfo.Image = ((System.Drawing.Image)(resources.GetObject("btnInfo.Image")));
+            this.btnInfo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnInfo.Name = "btnInfo";
+            this.btnInfo.Size = new System.Drawing.Size(41, 35);
+            this.btnInfo.Text = "Sobre";
+            this.btnInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
+            // 
+            // btnManual
+            // 
+            this.btnManual.Image = ((System.Drawing.Image)(resources.GetObject("btnManual.Image")));
+            this.btnManual.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnManual.Name = "btnManual";
+            this.btnManual.Size = new System.Drawing.Size(51, 35);
+            this.btnManual.Text = "Manual";
+            this.btnManual.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            // 
             // frmPrograma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(570, 427);
+            this.ClientSize = new System.Drawing.Size(571, 460);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.btnReiniciar);
             this.Controls.Add(this.btnEncerrar);
             this.Controls.Add(this.console);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,7 +228,10 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -210,10 +245,13 @@
         private System.Windows.Forms.TextBox txtPort;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtHost;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.RichTextBox console;
         private System.Windows.Forms.Button btnEncerrar;
         private System.Windows.Forms.Button btnReiniciar;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btnInfo;
+        private System.Windows.Forms.ToolStripButton btnManual;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

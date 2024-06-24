@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Manual de Instruções para o Programa PrintService35
+Introdução
+
+O PrintService35 é um programa que atua como um WebSocket com interface gráfica, projetado para receber comandos e imprimir etiquetas ZPL em uma impressora Zebra ou arquivos PDF em uma impressora A4. Este manual fornecerá orientações detalhadas sobre como configurar e utilizar o programa.
+
+Configuração Inicial
+
+Passo 1: Escolher a Impressora A4
+
+1. Abra o programa PrintService35.
+2. Na interface gráfica, localize o dropdown list (lista suspensa) rotulado como "Impressora A4".
+3. Clique na lista suspensa e selecione a impressora A4 desejada.
+
+Passo 2: Escolher a Impressora Zebra
+
+1. Na mesma interface gráfica, localize o dropdown list (lista suspensa) rotulado como "Impressora Zebra".
+2. Clique na lista suspensa e selecione a impressora Zebra desejada.
+
+Passo 3: Informar a Porta do WebSocket
+
+1. Na interface gráfica, localize o campo de texto rotulado como "Porta do WebSocket".
+2. Digite o número da porta desejada (por exemplo, 9344).
+
+Passo 4: Reiniciar a Aplicação para Aplicar as Configurações
+
+1. Após configurar as impressoras e a porta do WebSocket, localize o botão "Reiniciar" na interface gráfica.
+2. Clique no botão "Reiniciar" para aplicar as configurações e reiniciar a aplicação.
+
+Funcionalidades
+
+Imprimir A4
+
+Para imprimir um arquivo PDF em uma impressora A4, envie o comando no seguinte formato:
+
+&lt;pdf&gt;{nome_do_arquivo.pdf}
+
+Substitua {nome_do_arquivo.pdf} pelo nome do arquivo PDF que deseja imprimir.
+O arquivo será enviado para a impressora A4 selecionada.
+
+Imprimir Arquivo
+Para imprimir um arquivo de texto ou outro tipo de arquivo suportado, envie o comando no seguinte formato:
+
+&lt;file&gt;{nome_do_arquivo.txt}
+
+Substitua {nome_do_arquivo.txt} pelo nome do arquivo que deseja imprimir.
+O arquivo será enviado para a impressora A4 selecionada.
+
+Imprimir Etiqueta ZPL
+Se o comando enviado não contiver a TAG &lt;pdf&gt; ou &lt;file&gt;, o programa assumirá que o conteúdo é um código ZPL e o enviará para a impressora Zebra. Exemplo de comando:
+
+^XA^FO50,50^ADN,36,20^FDHello, World!^FS^XZ
+
+Exemplo de Uso
+
+Configuração
+1. Selecione "HP LaserJet 1020" no dropdown list "Impressora A4".
+2. Selecione "Zebra ZP 450" no dropdown list "Impressora Zebra".
+3. Digite 9344 no campo de texto da porta do WebSocket.
+4. Clique no botão "Reiniciar" para aplicar as configurações.
+
+Comandos de Impressão
+
+1. Para imprimir um arquivo PDF:
+&lt;pdf&gt;{documento.pdf}
+
+2. Para imprimir um arquivo de texto:
+&lt;file&gt;{documento.txt}
+
+3. Para imprimir um código ZPL:
+^XA^FO50,50^ADN,36,20^FDHello, World!^FS^XZ
+
+Com estas instruções, você estará apto a configurar e utilizar o PrintService35 para gerenciar suas impressões de maneira eficiente e eficaz.
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        2f//////dM6O/17He/9iyH3/eNCS/4bUnv8kskr/Rrlj/1GzZ88AAAAAeXNy4YeCgv90YWj/EpU4/8Dw
+        z//u+fP/V8Z4/4XVnP+H1Z3/cc2N/8vr1P940JL/LLdV/z23YP9TtWrPAAAAAHlzcuGIgoP/a11g/zaj
+        V//r//P/ftKb/+748//O7tn/z+7a/////////////////73pzf8ts1X/R7JizwAAAAB5c3LhiYKD/2Zc
+        XP9JrWn/7P/z/1bFe///////HLVR/xiySv/7/Pz/iNin/z6/af//////UsB1/z+wX88AAAAAdXFu4YZ+
+        f/9iWFj/Raxp//D/+f9Wx3///////3DRlf8BrkD/muC3//T69v8Pskn/1fPj/5vZr/9Pt23PAAAAAIiB
+        geGZk5P/hXt8/0+8fP/0//z/kd2y/7bpzv//////ZtGQ/6Hiuv//////GLla/9X05P+a2LD/T7lwzwAA
+        AACenJjhqaOk/5mJjv9IvXz/uu/S//////9j0Zb/vOvU///////q9vD/1PHh/5zivP//////TsR7/zy2
+        Zs8AAAAAmpWU4aSen/+VhYn/WcSM/1HVkv/S8OD//////4zdtf962Kn/c9el/6Plw///////rurO/1jL
+        jv9oxY3PAAAAAJqVlOGknp//lYWJ/1nEkP9h3KH/VtGV/5njwf/8/P3///7////////2/Pr/j+G5/1TV
+        l/9k0Zr/bceTzwAAAACalZLho52f/5ODiP9Yx5P/Zd+p/1/Xov9Q1Jj/VtWc/1bWnP9W1pz/VdSa/1PU
+        mv9f26X/ZdOg/2rJlM8AAAAApqOi4aymp/+Tg4X/UciV/1zirP9b26j/W9yo/1napv9Y2qb/WNqk/1ja
+        pP9Y2qT/WNun/2PZqP9s0p/RAAAAAJqVlOa8ubj/2NXV/73p1v/H6tz/x+nb/8rr3P/M7N//ze7i/87w
+        4//P8ub/0fPm/9r68/+k2Lv/dbWIxgAAAAAWDwZ/MSwj/0c5NvRETz7zUaRv81Kca/NSmmrzVZhr81aV
+        Z/NYkmLzWZBd81qNXPJik2H/N3g1sRZWDi+AAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAA
+        AACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAA
+</value>
+  </data>
+</root>
